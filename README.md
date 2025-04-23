@@ -41,41 +41,47 @@ Before you begin, ensure you have the following installed in AWS EC2:
 
 - Click *Generate*, unzip the project, and open it in your IDE.
 ---------------------------------------------------------------------------
-Now we build with maven
-./mvnw clean package
+**Now we build with maven
+**./mvnw clean package
   we can see the below message 
 [INFO] BUILD SUCCESS
 
   ----------------------------------------------------------------------------
 Now your Spring Boot app is ready to be Dockerized.
-#Step 1: Create a Dockerfile
+**#Step 1: Create a Dockerfile
+**
 We have to create Dockerfile in your project root (~/projects/hello-world):
 
-#Step 2: Build the Docker Image
+**#Step 2: Build the Docker Image
+**
 Now run:
     docker build -t hello-world-app .
 we could see below context
 Successfully tagged hello-world-app:latest
 
-#Step 3: verify the image is built or not
+**#Step 3: verify the image is built or not
+**
 now run:
     docker images
 
-#Step 4: Run it in a container
-    docker run -d -p 8081:8080 --name hello-world-app hello-world-app
+**#Step 4: Run it in a container
+** 
+docker run -d -p 8081:8080 --name hello-world-app hello-world-app
 then it shows like 
 ea45477ad5a4eba6bf664ba1b1f1a2e377ca17dddd95185b6f642cc22b8ebc34
-![Dockerhub image layer page](https://github.com/user-attachments/assets/5f197f32-25f5-4e4a-90a1-228240886222)
+![Docker image pushed to docker hub](https://github.com/user-attachments/assets/9adf30ca-552a-4f48-9e2a-2fed434a2db2)
 
-#Step 5: Check it in browser
-    Open browser and type http://ec2publicip:8081 
+**#Step 5: Check it in browser
+** 
+Open browser and type http://ec2publicip:8081 
 it shows our hellocontroller.java return message
 I showcased the app in browser with this line "Powerful comeback- HEY EC2!"
 ![Docker browser output](https://github.com/user-attachments/assets/3dea35be-e29c-4b1a-a180-f996a763b6bb)
 
-#Step 6: We published the docker image into docker hub as public
+**#Step 6: We published the docker image into docker hub as public
+**
 ![Dockerhub repo page](https://github.com/user-attachments/assets/94504800-653f-44ab-8e77-d83659a73714)
-![Docker image pushed to docker hub](https://github.com/user-attachments/assets/9adf30ca-552a-4f48-9e2a-2fed434a2db2)
+![Dockerhub image layer page](https://github.com/user-attachments/assets/5f197f32-25f5-4e4a-90a1-228240886222)
 
 --------------------------------------------------------------------------------
 Pre check about Jenkins Installation 
