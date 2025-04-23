@@ -70,6 +70,12 @@ ea45477ad5a4eba6bf664ba1b1f1a2e377ca17dddd95185b6f642cc22b8ebc34
     Open browser and type http://ec2publicip:8081 
 it shows our hellocontroller.java return message
 I showcased the app in browser with this line "Powerful comeback- HEY EC2!"
+![Docker browser output](https://github.com/user-attachments/assets/3dea35be-e29c-4b1a-a180-f996a763b6bb)
+
+#Step 6: We published the docker image into docker hub as public
+![Dockerhub image layer page](https://github.com/user-attachments/assets/5f197f32-25f5-4e4a-90a1-228240886222)
+![Dockerhub repo page](https://github.com/user-attachments/assets/94504800-653f-44ab-8e77-d83659a73714)
+![Docker image pushed to docker hub](https://github.com/user-attachments/assets/9adf30ca-552a-4f48-9e2a-2fed434a2db2)
 
 --------------------------------------------------------------------------------
 Pre check about Jenkins Installation 
@@ -104,11 +110,13 @@ Delete workspace before build starts – to clean old files
 Choose Execute Shell in Add build step
 and enter as command as your wish
 We choosed to dockerize the image automatically
+![Jenkins job configuration](https://github.com/user-attachments/assets/349bad83-5413-42e9-b95e-cb1e61977a90)
 
-5. Save the changes and back to the 
+6. Save the changes and back to the 
 Then click “Build Now” in left side menu.
 We can see the build job in bottom of the left side 
 We can choose the console output to monitor the real-time logs 
+![Jenkins build job successfully](https://github.com/user-attachments/assets/bf21d390-f86e-4a39-bb9d-947fb34685f5)
 
 # Project Structure
 
