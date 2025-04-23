@@ -1,6 +1,3 @@
-# hello-world-aws
-AWS Free tier Hello-World project
-=======
 # AWS Hello World - Java Spring Boot with Jenkins CI/CD
 
 ## Overview
@@ -25,17 +22,13 @@ This project demonstrates a simple *Hello World* application built using *Java S
 ## Setup and Installation
 
 ### Prerequisites
-
 Before you begin, ensure you have the following installed in AWS EC2:
-
 - Java 11 or higher
 - Maven
 - Jenkins (for CI/CD)
 - Docker
 
-
 ### Steps
-
 1. Create the app by usingSpring Initializr (GUI)
 - Visit [https://start.spring.io/](https://start.spring.io/)
 - Choose the following options:
@@ -52,7 +45,8 @@ Now we build with maven
 ./mvnw clean package
   we can see the below message 
 [INFO] BUILD SUCCESS
-----------------------------------------------------------------------------
+
+  ----------------------------------------------------------------------------
 Now your Spring Boot app is ready to be Dockerized.
 #Step 1: Create a Dockerfile
 We have to create Dockerfile in your project root (~/projects/hello-world):
@@ -76,6 +70,7 @@ ea45477ad5a4eba6bf664ba1b1f1a2e377ca17dddd95185b6f642cc22b8ebc34
     Open browser and type http://ec2publicip:8081 
 it shows our hellocontroller.java return message
 I showcased the app in browser with this line "Powerful comeback- HEY EC2!"
+
 --------------------------------------------------------------------------------
 Pre check about Jenkins Installation 
 Start and Enable Jenkins
@@ -146,4 +141,4 @@ Automate Docker image creation and push to DockerHub via Jenkins.
 Thank you for using this project!
 Feel free to contribute or suggest improvements.
 Happy Coding! 🎉
->>>>>>> 53a4b3c (We successfully completed CI pipeline in AWS)
+
